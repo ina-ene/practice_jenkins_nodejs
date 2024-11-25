@@ -12,7 +12,7 @@
                    script {
                        checkout([$class: 'GitSCM',
                                  branches: [[name: '*/main']],
-                                 userRemoteConfigs: [[url: 'https://github.com/ina-ene/practice_jenkins_nodejs.git']]
+                                 userRemoteConfigs: [[url: 'https://github.com/ina-ene/practice_jenkins_nodejs.git', credentialsId: 'github-token']]
                         ])
                    }
                 }
