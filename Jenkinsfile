@@ -1,7 +1,7 @@
 
    pipeline {
        agent  {
-        label 'node-js'
+        label 'nodejs'
        }
        environment {
            DOCKER_IMAGE = 'my.harbor/test-project/nodejs-app:latest'
