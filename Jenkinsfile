@@ -1,6 +1,6 @@
 
    pipeline {
-       agent any
+       agent enslaved-1
 
        environment {
            DOCKER_IMAGE = 'my.harbor/test-project/nodejs-app:latest'
