@@ -31,7 +31,7 @@
                steps {
                    script {
                        // Log in to Harbor and push the built image
-                       docker.withRegistry('http://my.harbor', 'harbor-credentials') {
+                       docker.withRegistry('http://my.harbor:80', 'harbor-credentials') {
                            dockerImage.push()
                        }
                    }
