@@ -31,7 +31,7 @@
                steps {
                    script {
                        // Log in to Harbor and push the built image
-                       docker.withRegistry('harbor.bahur', 'harbor-credentials') {
+                       docker.withRegistry('http://harbor.bahur', 'harbor-credentials') {
                            dockerImage.push()
                        }
                    }
