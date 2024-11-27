@@ -30,9 +30,10 @@
 
            stage('Push to Harbor') {
                steps {
+            
                    script {
                        // Log in to Harbor and push the built image
-                       docker.withRegistry('https://harbor.bahur:8443', 'harbor-credentials') {
+                       docker.withRegistry('https://harbor.bahur:8443', 'jenkins-harbor-robot') {
                            dockerImage.push()
                        }
                    }
