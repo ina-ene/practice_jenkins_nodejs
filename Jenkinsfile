@@ -4,7 +4,8 @@
         label 'nodejs'
        }
        environment {
-           DOCKER_IMAGE = 'harbor.bahur/test-project/nodejs-app:latest'
+           DOCKER_IMAGE = harbor.bahur:8443/test-project/nodejs-app:<tag>
+
        }
 
        stages {
